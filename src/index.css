@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'EastSyriacAdiabeneRegular';
+  src: url('/public/fonts/EastSyriacAdiabeneRegular.woff2') format('woff2'),
+      url('/public/fonts/EastSyriacAdiabeneRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Estrangelo Nisibin';
+  src: url('/public/fonts/EstrangeloNisibin.woff2') format('woff2'),
+      url('/public/fonts/EstrangeloNisibin.woff') format('woff');
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Estrangelo Nisibin", sans-serif;
+}
+
+body {
+  font-family: "EastSyriacAdiabeneRegular", sans-serif;
+}
+  
+:root {
+  --animation-speed: 1000ms;
+  --animation-speed-fast: 500ms;
+  --default-cell-bg-color: theme('colors.slate.400');
+}
+
+.dark {
+  --default-cell-bg-color: theme('colors.slate.700');
+}
+
+.cell-fill-animation {
+  animation: onTypeCell linear;
+  animation-duration: 0.35s;
+}
+
+.cell-reveal {
+  animation-duration: 0.35s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+.cell-reveal.absent {
+  animation-name: revealAbsentCharCell;
+}
+
+.cell-reveal.correct {
+  animation-name: revealCorrectCharCell;
+}
+
+.cell-reveal.present {
+  animation-name: revealPresentCharCell;
+}
+
+.cell-reveal > .letter-container {
+  animation: offsetLetterFlip 0.35s linear;
+  animation-fill-mode: backwards;
+}
+
+svg:hover {
+  animation: float infinite;
+  animation-duration: var(--animation-speed);
+}
+
+@keyframes revealAbsentCharCell {
+  0% {
+    transform: rotateX(0deg);
+    background-color: var(--default-cell-bg-color);
+    border-color: var(--default-cell-bg-color);
+  }
+  100% {
+    transform: rotateX(180deg);
+    background-color: var(--default-cell-bg-color);
+    border-color: var(--default-cell-bg-color);
+  }
+}
+
+@keyframes revealCorrectCharCell {
+  0% {
+    transform: rotateX(0deg);
+    background-color: var(--default-cell-bg-color);
+    border-color: var(--default-cell-bg-color);
+  }
+  100% {
+    transform: rotateX(180deg);
+    background-color: theme('colors.green.400');
+    border-color: theme('colors.green.400');
+  }
+}
+
+@keyframes revealPresentCharCell {
+  0% {
+    transform: rotateX(0deg);
+    background-color: var(--default-cell-bg-color);
+    border-color: var(--default-cell-bg-color);
+  }
+  100% {
+    transform: rotateX(180deg);
+    background-color: theme('colors.yellow.400');
+    border-color: theme('colors.yellow.400');
+  }
+}
+
+/* Additional animation on the child div to avoid letters turning upside down/snapping back to upright visual glitch */
+@keyframes offsetLetterFlip {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(180deg);
+  }
+}
+
+@keyframes onTypeCell {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.shadowed {
+  text-shadow: 1px 1px 1px #000000;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -0.5rem);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
