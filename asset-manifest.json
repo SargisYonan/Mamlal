@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/website/mamlal/static/css/main.4d7018fb.css",
+    "main.js": "/website/mamlal/static/js/main.6d5bdd45.js",
+    "static/js/787.2401c332.chunk.js": "/website/mamlal/static/js/787.2401c332.chunk.js",
+    "static/media/EstrangeloNisibin.woff": "/website/mamlal/static/media/EstrangeloNisibin.1165f7522d0becb8d7e4.woff",
+    "static/media/EastSyriacAdiabeneRegular.woff": "/website/mamlal/static/media/EastSyriacAdiabeneRegular.43acd347353df178d819.woff",
+    "static/media/EstrangeloNisibin.woff2": "/website/mamlal/static/media/EstrangeloNisibin.82daa8aaba626606f3ff.woff2",
+    "static/media/EastSyriacAdiabeneRegular.woff2": "/website/mamlal/static/media/EastSyriacAdiabeneRegular.b78873a3b65464c3719c.woff2",
+    "index.html": "/website/mamlal/index.html",
+    "main.4d7018fb.css.map": "/website/mamlal/static/css/main.4d7018fb.css.map",
+    "main.6d5bdd45.js.map": "/website/mamlal/static/js/main.6d5bdd45.js.map",
+    "787.2401c332.chunk.js.map": "/website/mamlal/static/js/787.2401c332.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d7018fb.css",
+    "static/js/main.6d5bdd45.js"
+  ]
+}
