@@ -1,7 +1,7 @@
 export const GAME_TITLE = process.env.REACT_APP_GAME_NAME!
 
 export const WIN_MESSAGES = ['!ܟ̰ܝܒܘ!', 'ܚܝܬ!', 'ܐܠܝܘܢ']
-export const GAME_COPIED_MESSAGE = 'ܡܬܕܡܝܢܘܬܐ ܕܛܐܠܬܐ ܢܘܣܟܬܐ ܝܠܗ̇'
+export const GAME_COPIED_MESSAGE = 'ܡܬܕܡܝܢܘܬܐ ܕܛܐܠܬܐ ܫܥܝܬܐ ܝܠܗ̇'
 export const ABOUT_GAME_MESSAGE = 'ܒܘܕ ܕܐܗܐ ܛܐܠܬܐ'
 export const NOT_ENOUGH_LETTERS_MESSAGE = 'ܒܣܘܪܐ ܕܐܬܘ̈ܬܐ ܝܘܬ'
 export const WORD_NOT_FOUND_MESSAGE = 'ܡܠܐ ܠܝܬ'
