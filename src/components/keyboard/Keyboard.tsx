@@ -38,7 +38,7 @@ export const Keyboard = ({
         onDelete()
       } else {
         const key = e.key.toUpperCase()
-        if (key.length === 1) {
+        if (key.length === 1 && key >= 'ܐ' && key <= 'ܬ' ) {
           onChar(key)
         }
       }
