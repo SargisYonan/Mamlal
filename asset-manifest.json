@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Mamlal/static/css/main.f14fd1ee.css",
-    "main.js": "/Mamlal/static/js/main.bc9830c4.js",
+    "main.js": "/Mamlal/static/js/main.6ed0a893.js",
     "static/js/787.2401c332.chunk.js": "/Mamlal/static/js/787.2401c332.chunk.js",
     "static/media/EstrangeloNisibin.woff": "/Mamlal/static/media/EstrangeloNisibin.1165f7522d0becb8d7e4.woff",
     "static/media/EastSyriacAdiabeneRegular.woff": "/Mamlal/static/media/EastSyriacAdiabeneRegular.43acd347353df178d819.woff",
@@ -9,11 +9,11 @@
     "static/media/EastSyriacAdiabeneRegular.woff2": "/Mamlal/static/media/EastSyriacAdiabeneRegular.b78873a3b65464c3719c.woff2",
     "index.html": "/Mamlal/index.html",
     "main.f14fd1ee.css.map": "/Mamlal/static/css/main.f14fd1ee.css.map",
-    "main.bc9830c4.js.map": "/Mamlal/static/js/main.bc9830c4.js.map",
+    "main.6ed0a893.js.map": "/Mamlal/static/js/main.6ed0a893.js.map",
     "787.2401c332.chunk.js.map": "/Mamlal/static/js/787.2401c332.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f14fd1ee.css",
-    "static/js/main.bc9830c4.js"
+    "static/js/main.6ed0a893.js"
   ]
 }
