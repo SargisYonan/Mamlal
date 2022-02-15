@@ -37,8 +37,8 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       </p>
       
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="ܦ" />
-        <Cell value="ܣ" />
+        <Cell value="ܒ" />
+        <Cell value="ܫ" />
         <Cell value="ܝ" />
         <Cell value="ܠ" status="absent" />
         <Cell value="ܐ" />
