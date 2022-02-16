@@ -10,7 +10,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="ܐܘܼܪܚܵܐ ܕܥܵܒ݂ܘܿܕܘܼܬܵܐ" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-2xl text-gray-500 dark:text-gray-300">
-        ܒܨܝܼ ܩܵܐ ܡܹܠܵܐ ܕܝܵܘܡܵܐ ܓܵܘ ܬܡܵܢܝܵܐ ܡܓ̰ܵܪܸܒܝܲܬܹܐ ܀
+        ܒܨܝܼ ܩܵܐ ܡܹܠܵܐ ܕܝܵܘܡܵܐ ܓܵܘ ܫܲܒ݂ܥܵܐ ܡܓ̰ܵܪܸܒܝܲܬܹܐ ܀
         ܒܲܬ݇ܪ ܟܘܼܕ ܓ̰ܪܵܒܬܵܐ܉ ܓܵܘܢܵܐ ܕܡܪܲܒܥܵܬܹܐ ܒܫܵܚܠܸܦܝܼ ܘܡܲܚܙܝܼܝ ܟܡܵܐ ܩܘܼܪܒܵܐ ܝܘܬ ܥܲܠ ܡܹܠܵܐ ܕܘܼܙ
       </p>
 
