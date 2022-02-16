@@ -33,7 +33,7 @@ export const findFirstUnusedReveal = (word: string, guesses: string[]) => {
   for (const letter of Array.from(knownLetterSet.values())) {
     // fail fast, always return first failed letter if applicable
     if (!word.includes(letter)) {
-      return `Guess must contain ${letter}`
+      return `ܠܝܼܬ ${letter} ܓܵܘ ܡܹܠܵܐ ܓ̰ܪܸܒܬܵܐ`
     }
   }
   return false

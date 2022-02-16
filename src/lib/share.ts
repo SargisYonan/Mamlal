@@ -15,7 +15,7 @@ export const shareStatus = (
 }
 
 export const generateEmojiGrid = (guesses: string[]) => {
-  return '\u202E' + guesses
+  return guesses
     .map((guess) => {
       const status = getGuessStatuses(guess)
       return guess
