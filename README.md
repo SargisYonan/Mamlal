@@ -30,6 +30,7 @@ $ docker run mamlal
 ```
 
 #### Contributing
+
 Open an issue or pull request with your change for review.
 
 Consider addressing one of the [**open feature requests or existing issues**](https://github.com/SargisYonan/Mamlal/issues).
