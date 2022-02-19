@@ -7,12 +7,14 @@ The word list was scraped and cleaned up using tools developed for [**AssyrianPh
 ### Building Locally
 
 Clone the repository
+
 ```
 $ git clone https://github.com/SargisYonan/Mamlal.git
 $ cd Mamlal
 ```
 
 #### React
+
 ```
 $ npm install
 $ npm run start
@@ -21,10 +23,12 @@ $ npm run start
 Open your browser and navigate to: http://localhost:3000
 
 #### Docker
+
 ```
-$ docker build -t mamlal . 
+$ docker build -t mamlal .
 $ docker run mamlal
 ```
 
 #### Additional Collaborators
+
 [**Dr. Emil Soleyman-Zomalan**](https://github.com/esoleyman)

@@ -5,7 +5,7 @@
 @font-face {
   font-family: 'EastSyriacAdiabeneRegular';
   src: url('/public/fonts/EastSyriacAdiabeneRegular.woff2') format('woff2'),
-      url('/public/fonts/EastSyriacAdiabeneRegular.woff') format('woff');
+    url('/public/fonts/EastSyriacAdiabeneRegular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -14,20 +14,20 @@
 @font-face {
   font-family: 'Estrangelo Nisibin';
   src: url('/public/fonts/EstrangeloNisibin.woff2') format('woff2'),
-      url('/public/fonts/EstrangeloNisibin.woff') format('woff');
+    url('/public/fonts/EstrangeloNisibin.woff') format('woff');
   font-weight: normal;
   font-display: swap;
   font-style: normal;
 }
 
 h1 {
-  font-family: "Estrangelo Nisibin", sans-serif;
+  font-family: 'Estrangelo Nisibin', sans-serif;
 }
 
 body {
-  font-family: "EastSyriacAdiabeneRegular", sans-serif;
+  font-family: 'EastSyriacAdiabeneRegular', sans-serif;
 }
-  
+
 :root {
   --animation-speed: 1000ms;
   --animation-speed-fast: 500ms;

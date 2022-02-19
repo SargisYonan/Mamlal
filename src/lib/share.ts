@@ -9,9 +9,10 @@ export const shareStatus = (
   isHardMode: boolean
 ) => {
   navigator.clipboard.writeText(
-    `${GAME_TITLE} ${solutionIndex} ${lost ? 'X' : guesses.length}/${MAX_CHALLENGES}${
-      isHardMode ? '*' : ''
-    }\n\n` + generateEmojiGrid(guesses)
+    `${GAME_TITLE} ${solutionIndex} ${
+      lost ? 'X' : guesses.length
+    }/${MAX_CHALLENGES}${isHardMode ? '*' : ''}\n\n` +
+      generateEmojiGrid(guesses)
   )
 }
 
@@ -19,22 +20,25 @@ export const generateEmojiGrid = (guesses: string[]) => {
   return guesses
     .map((guess) => {
       const status = getGuessStatuses(guess)
-      return '\u202E' + guess
-        .split('')
-        .map((_, i) => {
-          switch (status[i]) {
-            case 'correct':
-              return '🟩'
-            case 'present':
-              return '🟨'
-            default:
-              if (localStorage.getItem('theme') === 'dark') {
-                return '⬛'
-              }
-              return '⬜'
-          }
-        })
-        .join('')
+      return (
+        '\u202E' +
+        guess
+          .split('')
+          .map((_, i) => {
+            switch (status[i]) {
+              case 'correct':
+                return '🟩'
+              case 'present':
+                return '🟨'
+              default:
+                if (localStorage.getItem('theme') === 'dark') {
+                  return '⬛'
+                }
+                return '⬜'
+            }
+          })
+          .join('')
+      )
     })
     .join('\n')
 }
