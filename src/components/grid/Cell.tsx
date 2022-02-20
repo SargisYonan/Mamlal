@@ -41,7 +41,7 @@ export const Cell = ({
   return (
     <div className={classes} style={{ animationDelay }}>
       <div className="letter-container" style={{ animationDelay }}>
-        {value}
+        {value}&zwj;
       </div>
     </div>
   )
