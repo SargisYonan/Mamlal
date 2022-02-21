@@ -62,6 +62,31 @@ function App() {
       ? true
       : false
   )
+  const [chooseScript, setScript] = useState<string>(
+    localStorage.getItem('script') as string
+  )
+
+  const handleScript = (chooseScript: string) => {
+    setScript(chooseScript)
+    localStorage.setItem('script', chooseScript)
+  }
+
+  useEffect(() => {
+    if (chooseScript) {
+      switch (chooseScript) {
+        case 'western':
+          document.body.style.fontFamily = 'Serto Jerusalem'
+          break
+        case 'eastern':
+          document.body.style.fontFamily = 'East Syriac Adiabene Regular'
+          break
+        case 'estrangela':
+          document.body.style.fontFamily = 'Estrangelo Nisibin'
+          break
+      }
+    }
+  }, [chooseScript])
+
   const [successAlert, setSuccessAlert] = useState('')
   const [isRevealing, setIsRevealing] = useState(false)
   const [guesses, setGuesses] = useState<string[]>(() => {
@@ -265,6 +290,8 @@ function App() {
         handleHardMode={handleHardMode}
         isDarkMode={isDarkMode}
         handleDarkMode={handleDarkMode}
+        chooseScript={chooseScript}
+        handleScript={handleScript}
       />
 
       <button
