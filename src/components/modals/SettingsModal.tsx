@@ -1,5 +1,7 @@
 import { BaseModal } from './BaseModal'
 import { SettingsToggle } from './SettingsToggle'
+import { SettingsDropdown } from './SettingsDropdown'
+
 
 type Props = {
   isOpen: boolean
@@ -8,6 +10,8 @@ type Props = {
   handleHardMode: Function
   isDarkMode: boolean
   handleDarkMode: Function
+  chooseScript: string
+  handleScript: Function
 }
 
 export const SettingsModal = ({
@@ -17,6 +21,8 @@ export const SettingsModal = ({
   handleHardMode,
   isDarkMode,
   handleDarkMode,
+  chooseScript,
+  handleScript
 }: Props) => {
   return (
     <BaseModal title="ܩܪܩܙܝ̈ܬܐ" isOpen={isOpen} handleClose={handleClose}>
@@ -30,6 +36,11 @@ export const SettingsModal = ({
           settingName="ܚܫܟܢܬܐ"
           flag={isDarkMode}
           handleFlag={handleDarkMode}
+        />
+        <SettingsDropdown
+          settingName="ܟܬܝܒܬܐ"
+          flag={chooseScript}
+          handleFlag={handleScript}
         />
       </div>
     </BaseModal>
