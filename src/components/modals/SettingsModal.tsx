@@ -2,7 +2,6 @@ import { BaseModal } from './BaseModal'
 import { SettingsToggle } from './SettingsToggle'
 import { SettingsDropdown } from './SettingsDropdown'
 
-
 type Props = {
   isOpen: boolean
   handleClose: () => void
@@ -22,7 +21,7 @@ export const SettingsModal = ({
   isDarkMode,
   handleDarkMode,
   chooseScript,
-  handleScript
+  handleScript,
 }: Props) => {
   return (
     <BaseModal title="ܩܪܩܙܝ̈ܬܐ" isOpen={isOpen} handleClose={handleClose}>
