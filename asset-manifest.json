@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.5f8d8a14.css",
-    "main.js": "/static/js/main.f4105f89.js",
+    "main.css": "/static/css/main.c375ffaa.css",
+    "main.js": "/static/js/main.02aee5f6.js",
     "static/js/787.2401c332.chunk.js": "/static/js/787.2401c332.chunk.js",
+    "static/media/SertoJerusalem.woff2": "/static/media/SertoJerusalem.916cfe6be95dc1bd33b5.woff2",
     "static/media/EstrangeloNisibin.woff": "/static/media/EstrangeloNisibin.1165f7522d0becb8d7e4.woff",
     "static/media/EastSyriacAdiabeneRegular.woff": "/static/media/EastSyriacAdiabeneRegular.43acd347353df178d819.woff",
     "static/media/EstrangeloNisibin.woff2": "/static/media/EstrangeloNisibin.82daa8aaba626606f3ff.woff2",
     "static/media/EastSyriacAdiabeneRegular.woff2": "/static/media/EastSyriacAdiabeneRegular.b78873a3b65464c3719c.woff2",
     "index.html": "/index.html",
-    "main.5f8d8a14.css.map": "/static/css/main.5f8d8a14.css.map",
-    "main.f4105f89.js.map": "/static/js/main.f4105f89.js.map",
+    "main.c375ffaa.css.map": "/static/css/main.c375ffaa.css.map",
+    "main.02aee5f6.js.map": "/static/js/main.02aee5f6.js.map",
     "787.2401c332.chunk.js.map": "/static/js/787.2401c332.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f8d8a14.css",
-    "static/js/main.f4105f89.js"
+    "static/css/main.c375ffaa.css",
+    "static/js/main.02aee5f6.js"
   ]
 }
