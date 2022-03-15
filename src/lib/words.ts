@@ -41,9 +41,9 @@ export const findFirstUnusedReveal = (word: string, guesses: string[]) => {
 
 function isDST() {
   let today = new Date()
-  let jan = new Date(today.getFullYear(), 0, 1).getTimezoneOffset();
-  let jul = new Date(today.getFullYear(), 6, 1).getTimezoneOffset();
-  return Math.max(jan, jul) !== today.getTimezoneOffset();    
+  let jan = new Date(today.getFullYear(), 0, 1).getTimezoneOffset()
+  let jul = new Date(today.getFullYear(), 6, 1).getTimezoneOffset()
+  return Math.max(jan, jul) !== today.getTimezoneOffset()
 }
 
 export const getWordOfDay = () => {
