@@ -39,9 +39,21 @@ export const findFirstUnusedReveal = (word: string, guesses: string[]) => {
   return false
 }
 
+function isDST() {
+  let today = new Date()
+  let jan = new Date(today.getFullYear(), 0, 1).getTimezoneOffset();
+  let jul = new Date(today.getFullYear(), 6, 1).getTimezoneOffset();
+  return Math.max(jan, jul) !== today.getTimezoneOffset();    
+}
+
 export const getWordOfDay = () => {
   // January 1, 2022 Game Epoch
-  const epochMs = new Date('February 13, 2022 00:00:00').valueOf()
+
+  let epochMs = new Date('February 13, 2022 00:00:00').valueOf()
+  if (isDST()) {
+    epochMs = new Date('February 12, 2022 23:00:00').valueOf()
+  }
+
   const now = Date.now()
   const msInDay = 86400000
   const index = Math.floor((now - epochMs) / msInDay)
