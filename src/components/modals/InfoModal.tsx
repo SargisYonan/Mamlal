@@ -14,8 +14,8 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       handleClose={handleClose}
     >
       <p className="text-2xl text-gray-500 dark:text-gray-300">
-      ܒܨܝܼ ܥܲܠ ܡܸܠܬܵܐ ܝܵܘܡܵܝܬܵܐ ܓܵܘ ܫܲܒ݂ܥܵܐ ܢܘܼܣܵܝܹ̈ܐ ܀
-      ܒܵܬܵܪ ܟܠ ܢܘܼܣܵܝܵܐ ܡܫܲܚܠܸܦ ܓܵܘܢܵܐ ܕܲܡܪ̈ܲܒܥܹܐ، ܘܡܲܚܙܹܐ ܟܡܵܐ ܩܲܪܝܼܒ݂ ܐܲܢ݇ܬ ܥܲܠ ܡܸܠܬܵܐ ܬܪܝܼܨܬܵܐ
+        ܒܨܝܼ ܥܲܠ ܡܸܠܬܵܐ ܝܵܘܡܵܝܬܵܐ ܓܵܘ ܫܲܒ݂ܥܵܐ ܢܘܼܣܵܝܹ̈ܐ ܀ ܒܵܬܵܪ ܟܠ ܢܘܼܣܵܝܵܐ
+        ܡܫܲܚܠܸܦ ܓܵܘܢܵܐ ܕܲܡܪ̈ܲܒܥܹܐ، ܘܡܲܚܙܹܐ ܟܡܵܐ ܩܲܪܝܼܒ݂ ܐܲܢ݇ܬ ܥܲܠ ܡܸܠܬܵܐ ܬܪܝܼܨܬܵܐ
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
@@ -26,7 +26,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="ܐ" />
       </div>
       <p className="text-xl text-gray-500 dark:text-gray-300">
-      ܐܵܬܘܼܬܐ ܕ”ܦ” ܝܼܠܵܗ̇ ܒܕܘܼܟܬܵܐ ܬܪܝܼܨܬܵܐ
+        ܐܵܬܘܼܬܐ ܕ”ܦ” ܝܼܠܵܗ̇ ܒܕܘܼܟܬܵܐ ܬܪܝܼܨܬܵܐ
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
@@ -37,7 +37,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="ܐ" />
       </div>
       <p className="text-xl text-gray-500 dark:text-gray-300">
-      ܐܝܼܬ ܐܵܬܘܼܬܵܐ ܕ”ܝ” ܒܡܸܠܬܵܐ، ܐܸܠܵܐ ܠܵܐ ܝܠܵܗ̇ ܒܕܘܼܟܬܵܐ ܬܪܝܼܨܬܵܐ
+        ܐܝܼܬ ܐܵܬܘܼܬܵܐ ܕ”ܝ” ܒܡܸܠܬܵܐ، ܐܸܠܵܐ ܠܵܐ ܝܠܵܗ̇ ܒܕܘܼܟܬܵܐ ܬܪܝܼܨܬܵܐ
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
@@ -48,7 +48,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="ܐ" />
       </div>
       <p className="text-xl text-gray-500 dark:text-gray-300">
-      ܠܲܝܬ ܐܵܬܘܼܬܵܐ ܕ”ܠ” ܓܵܘ ܡܸܠܬܵܐ
+        ܠܲܝܬ ܐܵܬܘܼܬܵܐ ܕ”ܠ” ܓܵܘ ܡܸܠܬܵܐ
       </p>
     </BaseModal>
   )
