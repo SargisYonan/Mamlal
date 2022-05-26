@@ -1,5 +1,7 @@
 # ܡܡܠܠ - Mamlal
 
+mamlal.com
+
 This is an Assyrian Wordle clone built on top of [**react-wordle**](https://github.com/cwackerfuss/react-wordle). The word list used was gathered from [**Assyrian Languages**](https://www.assyrianlanguages.org)
 
 The word list was scraped and cleaned up using tools developed for [**AssyrianPhonetics**](https://github.com/AssyrianPhonetics/AssyrianPhonetics.github.io). Feel free to reach out for this data.
