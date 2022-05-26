@@ -1,6 +1,6 @@
 # ܡܡܠܠ - Mamlal
 
-mamlal.com
+Play the game at: [**mamlal.com**](https://www.mamlal.com)
 
 This is an Assyrian Wordle clone built on top of [**react-wordle**](https://github.com/cwackerfuss/react-wordle). The word list used was gathered from [**Assyrian Languages**](https://www.assyrianlanguages.org)
 
