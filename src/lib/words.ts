@@ -49,9 +49,9 @@ function isDST() {
 export const getWordOfDay = () => {
   // January 1, 2022 Game Epoch
 
-  let epochMs = new Date('February 13, 2022 00:00:00').valueOf()
+  let epochMs = new Date('October 8, 2024 00:00:00').valueOf()
   if (isDST()) {
-    epochMs = new Date('February 12, 2022 23:00:00').valueOf()
+    epochMs = new Date('October 7, 2024 23:00:00').valueOf()
   }
 
   const now = Date.now()
@@ -62,7 +62,7 @@ export const getWordOfDay = () => {
 
   return {
     solution: WORDS[index % WORDS.length].toUpperCase(),
-    solutionIndex: index,
+    solutionIndex: index % WORDS.length,
     tomorrow: nextday,
   }
 }

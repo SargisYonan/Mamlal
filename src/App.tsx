@@ -21,6 +21,12 @@ import {
   CORRECT_WORD_MESSAGE,
 } from './constants/strings'
 import {
+  WORDS,
+  WORDS_WITH_VOWELS,
+  DEFINITIONS,
+  PARTS_OF_SPEECH,
+} from './constants/wordlist'
+import {
   MAX_WORD_LENGTH,
   MAX_CHALLENGES,
   ALERT_TIME_MS,
@@ -31,6 +37,7 @@ import {
   isWordInWordList,
   isWinningWord,
   solution,
+  solutionIndex,
   findFirstUnusedReveal,
 } from './lib/words'
 import { addStatsForCompletedGame, loadStats } from './lib/stats'
@@ -273,6 +280,10 @@ function App() {
         gameStats={stats}
         isGameLost={isGameLost}
         isGameWon={isGameWon}
+        word={WORDS[solutionIndex]}
+        wordwithvowels={WORDS_WITH_VOWELS[solutionIndex]}
+        partofspeech={PARTS_OF_SPEECH[solutionIndex]}
+        definition={DEFINITIONS[solutionIndex]}
         handleShare={() => {
           setSuccessAlert(GAME_COPIED_MESSAGE)
           return setTimeout(() => setSuccessAlert(''), ALERT_TIME_MS)

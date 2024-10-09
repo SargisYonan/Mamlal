@@ -16,6 +16,10 @@ type Props = {
   isOpen: boolean
   handleClose: () => void
   guesses: string[]
+  word: string
+  wordwithvowels: string
+  partofspeech: string
+  definition: string
   gameStats: GameStats
   isGameLost: boolean
   isGameWon: boolean
@@ -27,6 +31,10 @@ export const StatsModal = ({
   isOpen,
   handleClose,
   guesses,
+  word,
+  wordwithvowels,
+  partofspeech,
+  definition,
   gameStats,
   isGameLost,
   isGameWon,
@@ -45,11 +53,16 @@ export const StatsModal = ({
     )
   }
   return (
-    <BaseModal
-      title={STATISTICS_TITLE}
-      isOpen={isOpen}
-      handleClose={handleClose}
-    >
+    <BaseModal title={wordwithvowels} isOpen={isOpen} handleClose={handleClose}>
+      <div style={{ direction: 'rtl' }}>
+        <h4 dir="ltr" className="text-lg leading-8 font-large dark:text-white">
+          [{partofspeech}] {definition}
+        </h4>
+      </div>
+
+      <h4 className="text-4xl leading-15 font-large dark:text-white">
+        {STATISTICS_TITLE}
+      </h4>
       <StatBar gameStats={gameStats} />
       <h4 className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100">
         {GUESS_DISTRIBUTION_TEXT}
