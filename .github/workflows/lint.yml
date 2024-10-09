@@ -1,16 +1,21 @@
-name: Lint
-on:
-  pull_request:
-  push:
-    branches:
-      - main
+name: Lint Check
+
+on: [push, pull_request]
 
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Prettify code
-        uses: creyD/prettier_action@v4.2
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          prettier_options: --check src
+          node-version: '14' # or your preferred version
+
+      - name: Install dependencies
+        run: npm install # Make sure prettier is listed in your package.json
+
+      - name: Prettify code
+        run: npx prettier --check src
