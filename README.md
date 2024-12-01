@@ -24,6 +24,12 @@ $ npm run start
 
 Open your browser and navigate to: http://localhost:3000
 
+#### Deploy With React
+```
+$ npx prettier --write src
+$ npm run deploy
+```
+
 #### Docker
 
 ```
