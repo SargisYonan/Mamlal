@@ -15,6 +15,14 @@ $ git clone https://github.com/SargisYonan/Mamlal.git
 $ cd Mamlal
 ```
 
+### Updating Word List
+
+Currently the words are pulled from the [**Kaikki dictionary**](https://kaikki.org/dictionary/Assyrian%20Neo-Aramaic/index.html) and parsed and loaded with a python script. 
+
+```
+$ python3 tools/parse_kaikki.py
+```
+
 #### React
 
 ```
