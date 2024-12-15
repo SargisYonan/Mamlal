@@ -8,7 +8,7 @@ type Props = {
 
 export const SettingsToggle = ({ settingName, flag, handleFlag }: Props) => {
   const toggleHolder = classnames(
-    'w-14 h-8 flex items-center bg-gray-300 rounded-full p-1 duration-300 ease-in-out cursor-pointer',
+    'w-14 h-8 flex flex-row-reverse items-center bg-gray-300 rounded-full p-1 duration-300 ease-in-out cursor-pointer',
     {
       'bg-green-400': flag,
     }
@@ -20,13 +20,13 @@ export const SettingsToggle = ({ settingName, flag, handleFlag }: Props) => {
     }
   )
   return (
-    <div className="flex justify-between items-center gap-8 mt-2">
+    <div className="flex flex-row-reverse justify-between items-center gap-8 mt-2">
+      <div className={toggleHolder} onClick={() => handleFlag(!flag)}>
+        <button className={toggleButton} />
+      </div>
       <h2 className="text-2xl text-gray-500 dark:text-gray-300">
         {settingName}
       </h2>
-      <div className={toggleHolder} onClick={() => handleFlag(!flag)}>
-        <div className={toggleButton} />
-      </div>
     </div>
   )
 }
