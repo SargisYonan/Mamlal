@@ -49,7 +49,7 @@ export const Key = ({
 
   return (
     <button style={styles} className={classes} onClick={handleClick}>
-      {children || value}&zwj;
+      {children || `${value}\u200D`}
     </button>
   )
 }
