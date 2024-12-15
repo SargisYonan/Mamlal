@@ -54,3 +54,5 @@ Consider addressing one of the [**open feature requests or existing issues**](ht
 #### Additional Collaborators
 
 [**Dr. Emil Soleyman-Zomalan**](https://github.com/esoleyman)
+
+[**Joseph Tamras**](https://github.com/habib1351)
